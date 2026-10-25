@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio ZKDizajn</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+</head>
+<body>
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="abstract-circle-header"></div>
+        <div class="header-content">
+            <!-- Logo link and button -->
+            <div class="logo-menuIcon-wrapper">
+                <a href="index.html" aria-label="Navigate to homepage">
+                    <img src="./assets/images/ZK-Dizajn-Logo.svg" alt="logo of ZKDizajn" />
+                </a>
+                <button class="open-menu-btn" id="openMenu" aria-expanded="false" aria-controls="pageNavigation">
+                    <span class="sr-only">open the mobile navigation</span>
+                    <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.75C0 7.33891 0.163303 6.94467 0.453984 6.65399C0.744666 6.3633 1.13891 6.2 1.55 6.2H17.5274C17.9385 6.2 18.3327 6.3633 18.6234 6.65399C18.9141 6.94467 19.0774 7.33891 19.0774 7.75C19.0774 8.16109 18.9141 8.55533 18.6234 8.84602C18.3327 9.1367 17.9385 9.3 17.5274 9.3H1.55C1.13891 9.3 0.744666 9.1367 0.453984 8.84602C0.163303 8.55533 0 8.16109 0 7.75ZM0 1.55C0 1.13891 0.163303 0.744666 0.453984 0.453984C0.744666 0.163303 1.13891 0 1.55 0H23.25C23.6611 0 24.0553 0.163303 24.346 0.453984C24.6367 0.744666 24.8 1.13891 24.8 1.55C24.8 1.96109 24.6367 2.35533 24.346 2.64602C24.0553 2.9367 23.6611 3.1 23.25 3.1H1.55C1.13891 3.1 0.744666 2.9367 0.453984 2.64602C0.163303 2.35533 0 1.96109 0 1.55ZM0 13.95C0 13.5389 0.163303 13.1447 0.453984 12.854C0.744666 12.5633 1.13891 12.4 1.55 12.4H23.25C23.6611 12.4 24.0553 12.5633 24.346 12.854C24.6367 13.1447 24.8 13.5389 24.8 13.95C24.8 14.3611 24.6367 14.7553 24.346 15.046C24.0553 15.3367 23.6611 15.5 23.25 15.5H1.55C1.13891 15.5 0.744666 15.3367 0.453984 15.046C0.163303 14.7553 0 14.3611 0 13.95ZM0 20.15C0 19.7389 0.163303 19.3447 0.453984 19.054C0.744666 18.7633 1.13891 18.6 1.55 18.6H17.5274C17.9385 18.6 18.3327 18.7633 18.6234 19.054C18.9141 19.3447 19.0774 19.7389 19.0774 20.15C19.0774 20.5611 18.9141 20.9553 18.6234 21.246C18.3327 21.5367 17.9385 21.7 17.5274 21.7H1.55C1.13891 21.7 0.744666 21.5367 0.453984 21.246C0.163303 20.9553 0 20.5611 0 20.15Z" fill="#2A2E48"/>
+                    </svg>
+                </button>
+            </div>
+            <!-- Navigation -->
+            <nav class="page-navigation" id="pageNavigation">
+                <button type="button" id="closeMobileNav" class="close-menu-btn">
+                    <span class="sr-only">close the mobile navigation</span>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.76667 10.6333L2.23333 17.1667C1.98889 17.4111 1.67778 17.5333 1.3 17.5333C0.922222 17.5333 0.611111 17.4111 0.366666 17.1667C0.122222 16.9222 0 16.6111 0 16.2333C0 15.8556 0.122222 15.5444 0.366666 15.3L6.9 8.76667L0.366666 2.23333C0.122222 1.98889 0 1.67778 0 1.3C0 0.922222 0.122222 0.611111 0.366666 0.366666C0.611111 0.122222 0.922222 0 1.3 0C1.67778 0 1.98889 0.122222 2.23333 0.366666L8.76667 6.9L15.3 0.366666C15.5444 0.122222 15.8556 0 16.2333 0C16.6111 0 16.9222 0.122222 17.1667 0.366666C17.4111 0.611111 17.5333 0.922222 17.5333 1.3C17.5333 1.67778 17.4111 1.98889 17.1667 2.23333L10.6333 8.76667L17.1667 15.3C17.4111 15.5444 17.5333 15.8556 17.5333 16.2333C17.5333 16.6111 17.4111 16.9222 17.1667 17.1667C16.9222 17.4111 16.6111 17.5333 16.2333 17.5333C15.8556 17.5333 15.5444 17.4111 15.3 17.1667L8.76667 10.6333Z" fill="#2A2E48"/>
+                    </svg>
+                </button>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#aboutSection" class="nav-link">O mne</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#servicesSection" class="nav-link">Služby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolioSection" class="nav-link">Portfolio</a>
+                    </li>
+                </ul>
+                <!-- Kontakt -->
+                <a href="#contactSection" class="contact-btn">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero content section with basic introduction -->
+        <section id="heroSection" class="hero-section">
+            <div class="content">
+                <div class="hero-content-grid">
+                    <article class="hero-content">
+                        <p class="subtitle">Grafický Dizajnér/UI Dizajnér</p>
+                        <h1 class="page-title">
+                            <span class="accent-clr">Ahoj, volám sa</span><br>
+                            Zuzana K
+                        </h1>
+                        <p class="lead-text hero-lead-text">Som freelance grafik a frontend developer. Navrhujem vizuálne podmanivé dizajny a pretváram ich do rýchlych, responzívnych webov. Preskúmajte moje portfólio a poďme spolu vytvoriť niečo výnimočné.
+                        </p>
+                        <div class="hero-btns-wrapper">
+                            <a href="#contactSection" class="btn-primary">Začnime tvoriť</a>
+                            <a href="#portfolioSection" class="btn-outline">Portfólio</a>
+                        </div>
+                    </article>
+                    <div class="hero-img-wrapper">
+                        <picture>
+                            <source srcset="./assets/images/hero-illustration-desktop-vector.svg" media="(min-width: 800px)">
+                            <img src="./assets/images/hero-illustration-mobile-vector.svg" alt="illustration of graphic designer desk at work" />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About me section -->
+        <section id="aboutSection" class="about-section">
+            <div class="content">
+                <h2 class="section-title">Kto som</h2>
+                <p class="lead-text section-lead-text">Pomáham jednotlivcom a malým firmám rásť v online svete bez toho, aby museli platiť predražené agentúry. Fungujem inak: na čas sa stanem vašim <span class="extra-weight">grafikom, vývojárom </span> a <span class="extra-weight">kolegom</span>, aby sme spoločne vytvorili digitálny produkt presne na mieru.</p>
+                <ul class="features-grid">
+                    <!-- Individual -->
+                    <li class="single-feature">
+                        <span class="num" data-num="1">1</span>
+                        <h3 class="feature-title">Individuálny prístup</h3>
+                        <p class="lead-text">Tvorím digitálne produkty pre tých, ktorí uprednostňujú osobný prístup a priamu komunikáciu pred korporátnym prístupom.</p>
+                    </li>
+                    <!-- Flexible -->
+                    <li class="single-feature">
+                        <span class="num" data-num="2">2</span>
+                        <h3 class="feature-title">Flexibilitu</h3>
+                        <p class="lead-text">Absolútnu voľnosť a flexibilitu dizajnéra aj vývojára v jednej osobe. Netlačím vás do dlhodobých viazaností ani nepotrebných služieb.</p>
+                    </li>
+                    <!-- Fair -->
+                    <li class="single-feature">
+                        <span class="num" data-num="3">3</span>
+                        <h3 class="feature-title">Férové ceny</h3>
+                        <p class="lead-text">Nemusíte platiť predražené reklamné agentúry. Platíte len za reálnu prácu, bez zbytočnej réžie okolo. Podmienky dohodnuté vopred.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="abstract-circle-about"></div>
+        </section>
+        <!-- Services Section -->
+        <section class="my-services" id="servicesSection">
+            <div class="content">
+                 <h2 class="section-title">Čo ponúkam</h2>
+                 <p class="lead-text section-lead-text">Moja úloha je jednoduchá. Ako všestranný freelancer Vám pomôžem s kompletnou grafikou. Navrhnem Vám logo, pripravím reklamné predmety pre Vašich zákazníkova vytvorím web. Nehľadajte na každú úlohu iného človeka.</p>
+                 <div class="my-services-grid">
+                    <div class="logo-indentita">
+                        <p>Logo & Identita značky</p>
+                    </div>
+                    <div class="tlacoviny">
+                        <p>Tlačoviny & Reklamné predmety</p>
+                    </div>
+                    <div class="frontend-web">
+                        <p>Frontend/<br>Tvorba webu</p>
+                    </div>
+                    <div class="ux-ui">
+                        <p>UX/UI</p>
+                    </div>
+                    <div class="grafika-social-siete">
+                        <p>Grafika pre sociálne siete</p>
+                       
+                    </div>
+                    <div class="tvorba-na-mieru">
+                        <p>Kreatívna tvorba na mieru</p>
+                    </div>
+                 </div>
+            </div>
+        </section>
+        <!-- Portfolio Section -->
+        <section id="portfolioSection" class="portfolio-section">
+            <div class="content">
+                <h2 class="section-title">Portfólio prác</h2>
+                <!-- Frontend Projects -->
+                <div class="frontend-portfolio-wrapper">
+                    <h3 class="portfolio-title">Frontend/Tvorba webových stránok</h3>
+                    <div class="frontend-projects-grid">
+                        <!-- Single Frontend Project -->
+                        <article class="single-frontend-project">
+                            <img src="./assets/portfolio/Recipe_Finder-mobile.jpg" class="project-img" alt="preview of recipe finder site" />
+                            <h4 class="project-title">recipe finder</h4>
+                            <p class="tags">html css javascript</p>
+                            <div class="links-container">
+                                <a href="https://zuzana83.github.io/healthy-recipe-website/" class="project-link" target="_blank" rel="noopener noreferrer">view project</a>
+                                <a href="https://github.com/Zuzana83/healthy-recipe-website" class="project-link" target="_blank" rel="noopener noreferrer">view code</a>
+                            </div> 
+                        </article>
+                        <!-- Single Frontend Project -->
+                        <article class="single-frontend-project">
+                            <img src="./assets/portfolio/Planets_Facts-mobile.jpg" class="project-img" alt="preview of planets facts site" />
+                            <h4 class="project-title">planets facts</h4>
+                            <p class="tags">html css javascript</p>
+                            <div class="links-container">
+                                <a href="https://zuzana83.github.io/planets-fact-site/" class="project-link" target="_blank" rel="noopener noreferrer">view project</a>
+                                <a href="https://github.com/Zuzana83/planets-fact-site" target="_blank" rel="noopener noreferrer" class="project-link">view code</a>
+                            </div> 
+                        </article>
+                        <!-- Single Frontend Project -->
+                        <article class="single-frontend-project">
+                            <img src="./assets/portfolio/Office_Lite_Page-mobile.jpg" class="project-img" alt="preview of business landing site" />
+                            <h4 class="project-title">business landing page</h4>
+                            <p class="tags">html css javascript</p>
+                            <div class="links-container">
+                                <a href="https://zuzana83.github.io/officelite-landing-page/" class="project-link" target="_blank" rel="noopener noreferrer">view project</a>
+                                <a href="https://github.com/Zuzana83/officelite-landing-page" class="project-link" target="_blank" rel="noopener noreferrer">view code</a>
+                            </div> 
+                        </article>
+                        <!-- Single Frontend Project -->
+                        <article class="single-frontend-project">
+                            <img src="./assets/portfolio/Personal_Blog-mobile.jpg" class="project-img" alt="preview of personal blog site" />
+                            <h4 class="project-title">personal blog</h4>
+                            <p class="tags">html css javascript</p>
+                            <div class="links-container">
+                                <a href="https://zuzana83.github.io/personal-blog-site/" class="project-link" target="_blank" rel="noopener noreferrer">view project</a>
+                                <a href="https://github.com/Zuzana83/personal-blog-site" class="project-link" target="_blank" rel="noopener noreferrer">view code</a>
+                            </div> 
+                        </article>
+                    </div>
+                </div>
+                <!-- Graphic Design Portfolio -->
+                <div class="graphic-design-portfolio">
+                    <h3 class="portfolio-title">Grafické práce</h3>
+                    <div class="graphic-designs-grid" id="graphicPortfolio">
+                    </div>
+                    <button type="button" class="load-more-btn" id="loadMoreBtn" aria-expanded="false" aria-controls="graphicPortfolio">Zobraziť viacej</button>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contactSection" class="contact-section">
+            <div class="content">
+                <h2 class="section-title">Napísať správu</h2>
+                <div class="contact-grid">
+                    <form id="contactForm" method="POST" action="https://formspree.io/f/xjygpovl" class="contact-form" novalidate>
+                        <div class="form-input-wrapper">
+                            <label for="meno" class="sr-only">Meno</label>
+                            <input type="text" name="meno" id="meno" class="form-input" placeholder="Meno">
+                            <small class="err-msg" id="menoError"></small>
+                        </div>
+                        <div class="form-input-wrapper">
+                            <label for="priezvisko" class="sr-only">Priezvisko</label>
+                            <input type="text" name="priezvisko" id="priezvisko" class="form-input" placeholder="Priezvisko">
+                            <small class="err-msg" id="priezviskoError"></small>
+                        </div>
+                        <div class="form-input-wrapper">
+                            <label for="telCislo" class="sr-only">Tel. číslo</label>
+                            <input type="tel" name="telCislo" id="telCislo" class="form-input" placeholder="Tel. číslo">
+                            <small class="err-msg" id="telefonError"></small>
+                        </div>
+                        <div class="form-input-wrapper">
+                            <label for="nazovFirmy" class="sr-only">Názov firmy(voľiteľné)</label>
+                            <input type="text" name="nazovFirmy" id="nazovFirmy" class="form-input" placeholder="Názov firmy(voľiteľné)">
+                        </div>
+                        <div class="form-input-wrapper email-wrapper">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" name="email" id="email" class="form-input" placeholder="Email">
+                            <small class="err-msg" id="emailError"></small>
+                        </div>
+                        <div class="form-input-wrapper message-wrapper">
+                            <label for="sprava" class="sr-only">Vaša správa</label>
+                            <textarea name="sprava" id="sprava" rows="5" placeholder="Stručný popis Vašich predstáv a požiadaviek"></textarea>
+                            <small class="err-msg" id="spravaError"></small>
+                        </div>
+                        <fieldset class="oblast-prac" id="oblastPrac">
+                            <legend>Predmet/Oblasť prác</legend>
+                            <div class="checkbox-form-input-wrapper">
+                                <input type="checkbox" class="checkbox-input" name="typPrace" id="webstrankyKomplet" value="webstránky komplet">
+                                <label for="webstrankyKomplet">Tvorba webstránky(komplet)</label>
+                            </div>
+                            <div class="checkbox-form-input-wrapper">
+                                <input type="checkbox" class="checkbox-input" name="typPrace" id="webstrankyGrafika" value="webstránky grafika">
+                                <label for="webstrankyGrafika">Tvorba webstránky(grafika)</label>
+                            </div>
+                            <div class="checkbox-form-input-wrapper">
+                                <input type="checkbox" class="checkbox-input" name="typPrace" id="tvorbaLoga" value="tvorba loga">
+                                <label for="tvorbaLoga">Tvorba loga</label>
+                            </div>
+                            <div class="checkbox-form-input-wrapper">
+                                <input type="checkbox" class="checkbox-input" name="typPrace" id="rpGrafika" value="reklamne predmety grafika">
+                                <label for="rpGrafika">Grafika na reklamné predmety</label>
+                            </div>
+                            <div class="checkbox-form-input-wrapper">
+                                <input type="checkbox" class="checkbox-input" name="typPrace" id="rpVýroba" value="reklamne predmety výroba">
+                                <label for="rpVýroba">Výroba reklamných predmetov</label>
+                            </div>
+                            <div class="checkbox-form-input-wrapper">
+                                <input type="checkbox" class="checkbox-input" name="typPrace" id="inePrace" value="ine prace" checked>
+                                <label for="inePrace">Iné</label>
+                            </div>
+                        </fieldset>
+                        <button type="submit" class="btn-primary submit-btn" id="submitBtn">Začnime tvoriť spolu</button>
+                    </form>
+                    <img src="./assets/images/contact-section-abstract-bg-sm.png" alt="" class="contact-form-img" />
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Page Footer -->
+    <footer class="page-footer">
+        <div class="footer-content">
+             <a href="index.html" aria-label="Navigate to homepage">
+                <img src="./assets/images/ZK-Dizajn-Logo-Light.svg" class="footer-logo" alt="logo of ZKDizajn" />
+            </a>
+            <p class="legal-text">ZKDesign &copy; 2026 || Všetky práva vyhradené</p>
+            <div class="social-links-wrapper">
+                <a href="https://www.github.com" class="social-link">
+                    <span class="sr-only">Follow me on Github</span>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 2.66699C14.249 2.66699 12.5152 3.01187 10.8976 3.68193C9.27988 4.35199 7.81003 5.33412 6.57191 6.57223C4.07143 9.07272 2.66667 12.4641 2.66667 16.0003C2.66667 21.8937 6.49334 26.8937 11.7867 28.667C12.4533 28.7737 12.6667 28.3603 12.6667 28.0003V25.747C8.97334 26.547 8.18667 23.9603 8.18667 23.9603C7.57334 22.4137 6.70667 22.0003 6.70667 22.0003C5.49334 21.1737 6.8 21.2003 6.8 21.2003C8.13334 21.2937 8.84 22.5737 8.84 22.5737C10 24.6003 11.96 24.0003 12.72 23.6803C12.84 22.8137 13.1867 22.227 13.56 21.8937C10.6 21.5603 7.49334 20.4137 7.49334 15.3337C7.49334 13.8537 8 12.667 8.86667 11.7203C8.73334 11.387 8.26667 10.0003 9 8.20033C9 8.20033 10.12 7.84033 12.6667 9.56033C13.72 9.26699 14.8667 9.12033 16 9.12033C17.1333 9.12033 18.28 9.26699 19.3333 9.56033C21.88 7.84033 23 8.20033 23 8.20033C23.7333 10.0003 23.2667 11.387 23.1333 11.7203C24 12.667 24.5067 13.8537 24.5067 15.3337C24.5067 20.427 21.3867 21.547 18.4133 21.8803C18.8933 22.2937 19.3333 23.107 19.3333 24.347V28.0003C19.3333 28.3603 19.5467 28.787 20.2267 28.667C25.52 26.8803 29.3333 21.8937 29.3333 16.0003C29.3333 14.2494 28.9885 12.5156 28.3184 10.8979C27.6483 9.2802 26.6662 7.81035 25.4281 6.57223C24.19 5.33412 22.7201 4.35199 21.1024 3.68193C19.4848 3.01187 17.751 2.66699 16 2.66699Z" fill="#8384FF"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com" class="social-link">
+                    <span class="sr-only">Follow me on Facebook</span>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29.3333 16.0003C29.3333 8.64033 23.36 2.66699 16 2.66699C8.63999 2.66699 2.66666 8.64033 2.66666 16.0003C2.66666 22.4537 7.25332 27.827 13.3333 29.067V20.0003H10.6667V16.0003H13.3333V12.667C13.3333 10.0937 15.4267 8.00033 18 8.00033H21.3333V12.0003H18.6667C17.9333 12.0003 17.3333 12.6003 17.3333 13.3337V16.0003H21.3333V20.0003H17.3333V29.267C24.0667 28.6003 29.3333 22.9203 29.3333 16.0003Z" fill="#8384FF"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <aside class="popup-msg" id="popupMsg" aria-live="polite">
+        <div class="icon-wrapper ">
+            <span class="material-icons-outlined error-icon">report_problem</span>
+            <span class="material-icons-outlined success-icon">task_alt</span>
+        </div>
+        <h2 class="msg-title" id="msgTitle">Oops!</h2>
+        <p class="msg-text" id="msgText"></p>
+    </aside>
+    <script src="./js/fslightbox.js"></script>
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html>
