@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+@font-face {
+  font-family: "Odetta"; 
+  src: url("./assets/fonts/Odetta.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
     --neutral-0: #ffffff;
     --neutral-950: #000000;
@@ -12,7 +19,7 @@
 
     --ff-primary: "Nunito Sans", sans-serif;
     --ff-accent: "Archivo Black", serif;
-    --ff-page-title: "Odette", cursive;
+    --ff-page-title: "Odetta", cursive;
 }
 
 *,
