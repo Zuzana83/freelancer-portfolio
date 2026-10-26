@@ -16,7 +16,6 @@ This is my personal freelance portfolio site, built from my own Figma design. Un
   - [Continued development](#continued-development)
   - [Running locally](#running-locally)
   - [AI Collaboration](#ai-collaboration)
-- [Author](#author)
 
 ## Overview
 
@@ -126,7 +125,3 @@ This is a static site with no build step. Clone or download the files and open `
 ### AI Collaboration
 
 I used an AI tool as a mentor throughout this build, the same way I worked through my Frontend Mentor projects — holding this personal project to the same standard a reviewer would apply. I'd describe what I wanted in plain terms, write the implementation myself, test it, and report back what actually happened, then iterate from there. Debugging in particular (the fslightbox timing issue, the reduced-motion CSS ordering bug, several CSS masonry grid dead ends) came from working through *why* something wasn't working rather than being handed a fix outright.
-
-## Author
-
-- [Add your name and any links: portfolio, LinkedIn, GitHub, etc.]
